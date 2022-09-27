@@ -26,10 +26,10 @@ public class MessageService {
      */
     public void sendMessage(){
         VxMessageDto dto = new VxMessageDto();
-        dto.setTemplate_id("修改成你的模板ID");  //修改成你的模板ID
-        dto.setTouser("修改成你的用户ID"); //修改成你的用户ID
+        dto.setTemplate_id("HMZ8y3Iv3OYYCN96mdKAaSQNpo04xyodFURnRZKhfNE");  //修改成你的模板ID
+        dto.setTouser("gh_ea628b22ccf4"); //修改成你的用户ID
         HashMap<String, DataInfo> map = new HashMap<>();
-        setMap(map,"userName","改成她的名字","#FFCCCC"); //改成她的名字
+        setMap(map,"userName"," gh_ea628b22ccf4","#FFCCCC"); //改成她的名字
         setAndSend(dto,map);
     }
 
