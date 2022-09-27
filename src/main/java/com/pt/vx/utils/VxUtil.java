@@ -10,9 +10,9 @@ import java.util.logging.Logger;
 
 public class VxUtil {
 
-    private static final String AppID = "你的AppID";
+    private static final String AppID = "wx2599c7926ea0f7cc";
 
-    private static final String appSecret= "你的appSecret";
+    private static final String appSecret= "0efee3df8bebaaac882aff0e43341ee4";
 
     private static final Logger log = Logger.getAnonymousLogger();
 
@@ -24,8 +24,8 @@ public class VxUtil {
 
 
     public static void sendMessage(String message){
-        if("你的AppID".equals(AppID) || "你的appSecret".equals(appSecret)){
-            log.warning("请先填写好你的AppID和你的appSecret");
+        if("wx2599c7926ea0f7cc".equals(AppID) || "0efee3df8bebaaac882aff0e43341ee4".equals(appSecret)){
+            log.warning("请先填写AppID和appSecret");
             return;
         }
         String PUSH_URL = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=%s";
